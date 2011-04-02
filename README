@@ -1,0 +1,14 @@
+Reference: http://antirez.com/post/scalability-and-speed-of-web-apps.html
+
+This repo shows an example of how to boot using rackup in a mode that doesn't
+waste time doing HTTP and Rack Spec validation.
+
+It pulls 1600r/s on Thin, or around 1300r/s on Mongrel, admittedly on a 2011
+MBP. ruby 1.8.7 (2011-02-18 patchlevel 334) [i686-darwin10] sinatra-1.2.1
+rack-1.2.2.
+
+I'm afraid I couldn't be bothered to setup Apache or configure my local nginx
+to service php through fcgi. It would be trivial to add a nginx.conf to this
+repo to demo the two.
+
+I'm not trying to defend ruby's performance, I'm just providing a base.
